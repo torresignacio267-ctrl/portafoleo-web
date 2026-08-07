@@ -1,0 +1,573 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio OS - Ignacio Torres</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Portfolio OS</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <!-- ==========================
+            BARRA DE TAREAS
+    =========================== -->
+
+        <header class="barra-tareas">
+
+            <div class="barra-izquierda">
+
+                <button class="btn-inicio">
+
+                    <img src="img/logo.png" alt="Inicio">
+
+                </button>
+
+                <h2>Portfolio OS</h2>
+
+            </div>
+
+            <div class="barra-derecha">
+
+                <span id="hora"></span>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==========================
+            ESCRITORIO
+    =========================== -->
+
+        <main class="escritorio">
+
+            <div class="icono" onclick="abrirVentana('sobreMi')">
+
+                <img src="img/archivo.png.png" alt="Sobre mí">
+
+                <p>Sobre mí</p>
+
+            </div>
+
+            <div class="icono" onclick="abrirVentana('habilidades')">
+
+                <img src="img/chrome.png.png" alt="Habilidades">
+
+                <p>Habilidades</p>
+
+            </div>
+
+            <div class="icono" onclick="abrirVentana('herramientas')">
+
+                <img src="img/configuracion.png.png" alt="Herramientas">
+
+                <p>Herramientas</p>
+
+            </div>
+
+            <div class="icono" onclick="abrirVentana('formacion')">
+
+                <img src="img/word.png.png" alt="Formación">
+
+                <p>Formación</p>
+
+            </div>
+
+            <div class="icono" onclick="abrirVentana('conocimientos')">
+
+                <img src="img/minecraft.png.png" alt="Conocimientos">
+
+                <p>Conocimientos</p>
+
+            </div>
+
+            <div class="icono" onclick="abrirVentana('contacto')">
+
+                <img src="img/spotify.png.png" alt="Contacto">
+
+                <p>Contacto</p>
+
+            </div>
+
+        </main>
+
+
+        <!-- ==========================
+            CONTENEDOR VENTANAS
+    =========================== -->
+
+        <div id="ventanas">
+
+            <!-- SOBRE MI -->
+
+            <section class="ventana" id="sobreMi">
+
+                <div class="barra">
+
+                    <h2>Sobre mí</h2>
+
+                    <button onclick="cerrarVentana('sobreMi')">✖</button>
+
+                </div>
+
+                <div class="contenido">
+
+                    <div class="sobre-mi">
+
+                        <img src="img/fotodeperfil.png.png" alt="Foto de perfil">
+
+                        <div class="texto-sobre-mi">
+
+                            <h2>¡Hola! Soy Ignacio Torres 👋</h2>
+
+                            <p>
+                                Tengo 19 años y soy estudiante de una escuela técnica con orientación en Informática.
+                            </p>
+
+                            <p>
+                                Me apasiona el hardware, las redes, el mantenimiento de computadoras y el desarrollo
+                                web.
+                            </p>
+
+                            <p>
+                                Diseñé este portfolio con la apariencia de un sistema operativo para mostrar mis
+                                proyectos y conocimientos de una manera creativa.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- HABILIDADES -->
+
+            <section class="ventana" id="habilidades">
+
+                <div class="barra">
+                    <h2>🌐 Google Chrome - Habilidades</h2>
+                    <button onclick="cerrarVentana('habilidades')">✖</button>
+                </div>
+
+                <div class="contenido">
+
+                    <h3 class="titulo-ventana">Tecnologías que manejo</h3>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+                            <span>HTML</span>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="barra-progreso">
+                            <div class="progreso html"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="barra-progreso">
+                            <div class="progreso css"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+                            <span>JavaScript</span>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="barra-progreso">
+                            <div class="progreso js"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- HERRAMIENTAS -->
+
+            <section class="ventana" id="herramientas">
+
+                <div class="barra">
+                    <h2>⚙ Configuración - Herramientas</h2>
+                    <button onclick="cerrarVentana('herramientas')">✖</button>
+                </div>
+
+                <div class="contenido">
+
+                    <h3 class="titulo-ventana">
+                        Programas que utilizo
+                    </h3>
+
+                    <div class="herramientas-grid">
+
+                        <div class="tarjeta">
+
+                            <h3>💻 Visual Studio Code</h3>
+
+                            <p>Editor de código que utilizo para desarrollar mis proyectos web.</p>
+
+                        </div>
+
+                        <div class="tarjeta">
+
+                            <h3>🌐 Google Chrome</h3>
+
+                            <p>Navegador que utilizo para probar y depurar mis páginas web.</p>
+
+                        </div>
+
+                        <div class="tarjeta">
+
+                            <h3>🪟 Windows Server</h3>
+
+                            <p>Administración de usuarios, grupos, permisos y servicios.</p>
+
+                        </div>
+
+                        <div class="tarjeta">
+
+                            <h3>🐧 Ubuntu</h3>
+
+                            <p>Prácticas con Linux y utilización de la terminal.</p>
+
+                        </div>
+
+                        <div class="tarjeta">
+
+                            <h3>💽 VirtualBox</h3>
+
+                            <p>Creación y administración de máquinas virtuales.</p>
+
+                        </div>
+
+                        <div class="tarjeta">
+
+                            <h3>🖥 Windows</h3>
+
+                            <p>Mantenimiento, configuración y solución de problemas.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- FORMACION -->
+
+            <section class="ventana" id="formacion">
+
+                <div class="barra">
+                    <h2>📄 Microsoft Word - Formación</h2>
+                    <button onclick="cerrarVentana('formacion')">✖</button>
+                </div>
+
+                <div class="contenido">
+
+                    <div class="documento">
+
+                        <h1>Mi Formación</h1>
+
+                        <div class="linea-tiempo">
+
+                            <div class="evento">
+                                <div class="fecha">2020</div>
+                                <div class="descripcion">
+                                    Ingresé al <strong>Colegio Provincial Dr. Ernesto Guevara</strong>.
+                                </div>
+                            </div>
+
+                            <div class="evento">
+                                <div class="fecha">2023</div>
+                                <div class="descripcion">
+                                    Comencé a estudiar hardware y mantenimiento de computadoras.
+                                </div>
+                            </div>
+
+                            <div class="evento">
+                                <div class="fecha">2024</div>
+                                <div class="descripcion">
+                                    Aprendí los fundamentos de Redes Informáticas.
+                                </div>
+                            </div>
+
+                            <div class="evento">
+                                <div class="fecha">2025</div>
+                                <div class="descripcion">
+                                    Aprendí a utilizar Windows Server.
+                                </div>
+                            </div>
+
+                            <div class="evento">
+                                <div class="fecha">2026</div>
+                                <div class="descripcion">
+                                    Curso 7.º año y desarrollé este Portfolio OS para Programación VI.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONOCIMIENTOS -->
+
+            <section class="ventana" id="conocimientos">
+
+                <div class="barra">
+
+                    <h2>📊 Administrador de tareas - Conocimientos</h2>
+
+                    <button onclick="cerrarVentana('conocimientos')">✖</button>
+
+                </div>
+
+                <div class="contenido">
+
+                    <h3 class="titulo-ventana">
+                        Áreas donde tengo experiencia
+                    </h3>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+
+                            <span>🔧 Hardware</span>
+
+                            <span>85%</span>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div class="progreso hardware"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+
+                            <span>🌐 Redes</span>
+
+                            <span>60%</span>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div class="progreso redes"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+
+                            <span>🪟 Windows Server</span>
+
+                            <span>70%</span>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div class="progreso server"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+
+                            <span>🐧 Linux</span>
+
+                            <span>55%</span>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div class="progreso linux"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="habilidad">
+
+                        <div class="titulo">
+
+                            <span>🛠 Mantenimiento de PC</span>
+
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div class="progreso mantenimiento"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACTO -->
+
+            <section class="ventana" id="contacto">
+
+                <div class="barra">
+
+                    <h2>📞 Contacto</h2>
+
+                    <button onclick="cerrarVentana('contacto')">✖</button>
+
+                </div>
+
+                <div class="contenido">
+
+                    <h3 class="titulo-ventana">¡Hablemos!</h3>
+
+                    <div class="info-contacto">
+
+                        <p>📧 <strong>Correo:</strong><br>
+                            <a href="mailto:torresignacio267@gmail.com">
+                                torresignacio267@gmail.com
+                            </a>
+                        </p>
+
+                        <p>📸 <strong>Instagram:</strong><br>
+                            <a href="https://instagram.com/nacho_torress07" target="_blank">
+                                @nacho_torress07
+                            </a>
+                        </p>
+
+                        <p>💻 <strong>GitHub:</strong><br>
+                            <a href="https://github.com/torresignacio267" target="_blank">
+                                github.com/torresignacio267
+                            </a>
+                        </p>
+
+                        <p>
+                            💼 <strong>LinkedIn:</strong><br>
+                            <a href="https://www.linkedin.com/in/ignacio-torres-20ba503b9/" target="_blank">
+                                linkedin.com/in/ignacio-torres-20ba503b9
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <form class="formulario">
+
+                        <input type="text" placeholder="Nombre">
+
+                        <input type="email" placeholder="Correo electrónico">
+
+                        <textarea placeholder="Escribe tu mensaje..."></textarea>
+
+                        <button type="submit">
+                            Enviar
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+            <footer class="barra-tareas">
+
+                <div class="inicio">
+
+                    🪟 <span>Portfolio OS</span>
+
+                </div>
+
+                <div class="apps-barra">
+
+                    <img src="img/archivo.png.png" alt="Sobre mí" onclick="abrirVentana('sobre-mi')">
+
+                    <img src="img/chrome.png.png" alt="Habilidades" onclick="abrirVentana('habilidades')">
+
+                    <img src="img/configuracion.png.png" alt="Herramientas" onclick="abrirVentana('herramientas')">
+
+
+                    <img src="img/word.png.png" alt="Formación" onclick="abrirVentana('formacion')">
+
+                    <img src="img/minecraft.png.png" alt="Conocimientos" onclick="abrirVentana('conocimientos')">
+
+
+                    <img src="img/spotify.png.png" alt="Contacto" onclick="abrirVentana('contacto')">
+
+                </div>
+
+                <div class="info-barra">
+
+                    <span id="hora"></span>
+
+                </div>
+
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
+
+</html>
